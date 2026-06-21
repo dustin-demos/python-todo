@@ -7,9 +7,7 @@ from typing import Any
 
 TORTOISE_ORM: dict[str, Any] = {
   'connections': {
-    'default': os.getenv(
-      'DATABASE_URL', 'postgres://postgres:postgres@localhost:5432/python_todo'
-    )
+    'default': os.getenv('DATABASE_URL', 'sqlite://db.sqlite3')
   },
   'apps': {
     'models': {

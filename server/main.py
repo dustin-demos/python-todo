@@ -22,7 +22,8 @@ if not os.getenv('TESTING'):
   register_tortoise(
     app,
     config=TORTOISE_ORM,
-    generate_schemas=False,
+    # The demo runs on SQLite with no migration step, so create the tables on startup.
+    generate_schemas=True,
     add_exception_handlers=True,
   )
 
