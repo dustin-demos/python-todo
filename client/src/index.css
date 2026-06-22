@@ -10,7 +10,7 @@ html, body {
 
 /* Base body styles for all apps */
 body {
-  @apply text-base text-white bg-black;
+  @apply text-base text-white bg-dark-600;
   @apply min-h-screen min-w-[425px];
 }
 
